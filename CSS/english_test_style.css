@@ -1,0 +1,95 @@
+
+.contenedor{
+    margin: auto;
+    width:80%;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    margin:5px;
+}
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 26px;
+    padding:5px;
+    margin: 5px;
+    color: #9b6dffa2;
+}
+h3, p {
+    padding: 5px;
+    margin: 5px;
+}
+label{
+    display: block;
+}
+.question_border {
+    border: 1px grey solid;
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+    margin: 3px;
+}
+h4{
+    padding: 15px;
+    margin: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+/*Cursos resultado*/
+.img_option_course{
+    border: 1px rgb(187, 187, 187) solid;
+    padding: 15px;
+    margin:auto;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+/*Estilos resultado*/
+html{
+ scroll-behavior: smooth;
+}
+#resultado{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+/*footer*/
+h5{
+    font-size: medium;
+    font-weight: 300;
+    padding: 10px;
+}
+footer{
+    margin-top: 40px;
+}
+/*Buscador de universidades*/
+.u_container {
+    padding: 15px;
+    margin:auto;
+    width: 70%;
+    height: 666px;
+    border-radius: 10px;
+    border: 1px rgb(207, 207, 207) solid;
+    -webkit-box-shadow: 10px 7px 14px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 7px 14px -11px rgba(0,0,0,0.75);
+    box-shadow: 10px 7px 14px -11px rgba(0,0,0,0.75);
+    overflow-y: scroll;
+}
+.link_ayuda_universidades{
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 81, 189);
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.link_ayuda_universidades:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(72, 29, 190);
+    text-decoration: none;
+}

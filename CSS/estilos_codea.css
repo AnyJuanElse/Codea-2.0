@@ -1,0 +1,210 @@
+@import url("../CSS/menu.css");
+/*--Estilos body--*/
+*{
+    margin: 0;
+    padding:0;
+}
+
+.contenedor {
+  padding: 40px 0; 
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.codea_logo{
+    width: 100px;
+    height: 140px;
+}
+
+.logo h2 {
+    display: inline-block;
+    padding: 8px;
+    margin: 40px;
+    margin-bottom: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size:  30px;
+    color: #fff;
+}
+
+/*a, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+*/
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+} 
+
+.titulo {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+/*--Header--*/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(184, 53%, 54%, 0.609),  #9b6dffa2, hsla(29, 97%, 27%, 0.609)), url(../img/annie-spratt-fvaB1MK6NxM-unsplash.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(184, 53%, 54%, 0.609), #9c6dffa2, hsla(29, 99%, 68%, 0.609)), url(../img/annie-spratt-fvaB1MK6NxM-unsplash.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -20px;
+    width: 100%;
+}
+
+nav > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav > a:hover {
+    color: rgb(223, 165, 165);
+    text-decoration: none;
+    font-size: 18px;
+}
+b{
+    color: #9b6dffd5;
+}
+.banner_sm{
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+.img_effect img{
+    height: 120px;
+}
+
+
+header .texto_header {
+    margin-top: 70px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+header .button_position{
+    position: relative;
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+}
+h3 {
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+}
+.gif{
+    margin: 0 auto;
+    margin-bottom: -30px;
+    width: 260px;
+
+}
+/*-- Abroad studies --*/
+
+.abroad_texts{
+    font-size: 20px;
+    padding:20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*--Benefits banner--*/
+
+h4 .benefit_title{
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 3px;
+    color: rgb(174, 103, 255);
+}
+.space{
+    padding: 5px;
+    margin-top: 10px;
+}
+.benefit_cont {
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+.benefit_ind{
+    width: 28%;
+    text-align: center;
+}
+
+/*--suscription space--*/
+b{
+    color: #9c6dff;
+}
+.suscription_col{
+    float: none;
+    margin: 8px auto;
+    background-color: #9c6dff;
+    width: 280px;
+    height: 430px;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.5);
+    box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.5);
+}
+.test_elements {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.test_elements p{
+    color: white;
+    font-size: 16;
+    padding: 5px;
+}
+h2 span{
+    animation: machine 6s infinite alternate steps(30);
+    background-color: white;
+
+}
+@keyframes machine{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
+/*--Footer--*/
+
+footer{
+    width: 100%;
+    height: 75px;
+}
+.content_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+}
+h5 {
+    font-family: 'Press Start 2P', cursive;
+}

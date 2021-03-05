@@ -150,3 +150,13 @@ footer li>a{
     padding: 1px;
     margin: -1px;
 }
+.nav-foot{
+    margin-top:-5px;
+}
+.elements{
+    width: 200px;
+   background-color: blue;
+}
+li .elements{
+    display: inline;
+}

@@ -14,27 +14,25 @@
     <header>
         <!--xs-sm header-->
         <div class="d-block d-sm-none">
-            <section style="display:inline;" class="logo">
+            <section class="responsive_logo">
                 <h2>Codea</h2>
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="icon-menu burguer"></label>
+                <nav class="menu d-sm-block d-md-none">
+                    <a href="./Quienes somos.html">¿Quienes Somos?</a>
+                    <a href="./ayuda.html">FAQS</a>
+                </nav>
             </section>
-            <input type="checkbox" id="menu-bar" onclick="img()">
-            <label for="menu-bar" class="icon-menu"></label>
-            <nav class="menu d-sm-block d-md-none">
-                <a href="./index.html">Inicio</a>
-                <a href="./Quienes somos.html">Quienes Somos</a>
-                <a href="./ayuda.html">Ayuda</a>
-            </nav>
             <section class="banner_sm">
                 <div class="row">
                     <div class="col-12 col-md-12">
-                        <div id="img_effect">
-                            <img src="./SVG_img/community.svg" class="img-fluid" alt="">
+                        <div>
+                            <img id="img_effect" src="./SVG_img/community.svg" class="img-fluid" alt="">
                         </div>
                         <div>
                             <h2>¡Bienvenidos!</h2>
                             <p>Somos una comunidad diversa llena de inspiración</p>
-                        </div> 
-                        
+                        </div>     
                     </div>
                 </div>
             </section>  
@@ -67,7 +65,7 @@
     </header>
 
     <section class="contenedor">
-        <h1>¡Cursos Online gratuitos!</h1>
+        <h1><b style="color:rgb(156 109 255)">¡</b>Cursos Online gratuitos<b style="color:rgb(156 109 255)">!</b></h1>
         <p style="text-align: center; font-size: 20px;">Universidades al rededor del mundo buscan certifican tus habilidades.
             Descuida, Codea te guiará en el proceso.</p>
         <div class="row">
@@ -96,7 +94,7 @@
                                 tus títulos obtenidos son validos en más de 15 paises.
                             </p>
                             <br> 
-                            <a href="ayuda.html"><button type="button" class="btn btn-outline-dark">Ver más</button></a> 
+                            <a class="links" href="./ayuda.html" target="_blank">ver más</a>
                         </div>
                         
                     </div>
@@ -116,7 +114,7 @@
                         <img class="img-fluid" src="SVG_img/network_.svg" alt="">
                         
                         <div class="space">
-                            <h4 class="benefit_title">- Interconectividad -</h4>
+                            <h4 class="benefit_title">Interconectividad</h4>
                             <p>Acceso desde cualquier dispositivo en cualquier parte del mundo.</p>
                         </div>
                     </div>
@@ -125,7 +123,7 @@
                         <img class="img-fluid" src="SVG_img/career_.svg" alt="">
                         
                         <div class="space">
-                            <h4 class="benefit_title">- Crecimiento Profesional -</h4>
+                            <h4 class="benefit_title">Crecimiento Profesional</h4>
                             <p>Certifica tu nivel de Inglés y consigue el trabajo que siempre soñaste.</p>
                             <br>
                         </div>
@@ -135,8 +133,8 @@
                         <img class="img-fluid" src="SVG_img/book_lover.svg" alt="">
                         
                         <div class="space">
-                            <h4 class="benefit_title">- Convenios -</h4>
-                            <p>Codea y las mejores universidades trabajando juntas para que no pares de aprender.</p>
+                            <h4 class="benefit_title">Convenios Academicos</h4>
+                            <p>Codea y las mejores universidades trabajando juntas por una formación gratuita.</p>
                         </div>
                     </div>
                 </div> 
@@ -148,10 +146,27 @@
         </div>
 
         <section class="contenedor">
-            <h2 class="titulo">Prueba tus conocimientos <b>hoy</b> con nuestros tests gratuitos.</h2>   
+            <h2 class="titulo">Prueba tus conocimientos <b>hoy</b> con nuestros tests gratuitos</h2>   
         </section>
-
-    <div class="contenedor">
+    <!--test md-->
+    <div class="contenedor d-none d-md-block d-lg-none">
+        <div class="row">
+            <div class="col-12 col-md-4" style="text-align: center;">
+                <img src="./img/html_5.png" class="img-fluid test-md-img" alt="">
+                <a class="links" href="./test_html.html" target="_blank">Go to HTML Test</a>
+            </div>
+            <div class="col-12 col-md-4"  style="text-align: center;">
+                <img src="./img/english.png" class="img-fluid test-md-img" alt="">
+                <a class="links" href="./english_test.html" target="_blank">Go to English Test</a>
+            </div>
+            <div class="col-12 col-md-4" style="text-align: center;">
+                <img src="./img/javascript.png" class="img-fluid test-md-img" alt="">
+                <a class="links" href="./test_javascript.html" target="_blank">Go to JavaScript Test</a>
+            </div>
+        </div>
+    </div>
+    <!--tests xs sm 0 lg xl-->
+    <div class="contenedor d-md-none d-lg-block">
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="suscription_col"> 
@@ -210,26 +225,33 @@
        </section>
         <hr>
         <footer>
-        <div class="contenedor_footer">
-            <div class="content_footer">
-                <h5>
-                    Codea © 
-                </h5>
-                
-                    <ul class="nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" style="color:black"; href="ayuda.html">Ayuda</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" style="color:black;" href="https://instagram.com/codeabictia?igshid=1fgxdk9r06bk5">Instagram</a>
-                        </li>
-                      </ul>
-
+            <div class="contenedor_footer">
+                <div class="content_footer">
+                    <h5 class="d-none d-sm-block">
+                        Codea ©
+                    </h5>
+                    <h5 class="sm-let d-block d-sm-none">
+                        Codea ©
+                    </h5>
+                    <a class="nav-foot d-block d-sm-none" style="color:black;" href="https://instagram.com/codeabictia?igshid=1fgxdk9r06bk5">Instagram</a>     
+                   
+                        <ul class="nav d-none d-sm-block">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" style="color:black"; href="ayuda.html">Ayuda</a>
+                                    </li>
+                                </div>
+                                <div class="col-6">
+                                    <li class="nav-item">
+                                    <a class="nav-link" style="color:black;" href="https://instagram.com/codeabictia?igshid=1fgxdk9r06bk5">Instagram</a>
+                                    </li>
+                                </div>
+                        </div>
+                        </ul>
                 </div>
             </div>
-            
-        </div>
-    </footer>
+        </footer>
 <script src="./JS/effect.js"></script>
 </body>
 </html>

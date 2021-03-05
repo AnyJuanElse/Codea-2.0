@@ -28,11 +28,6 @@
     color: #fff;
 }
 
-/*a, h2, h3 {
-    font-family: 'Raleway', sans-serif;
-}
-*/
-
 h1{
     text-align: center;
     margin-bottom: 10px;
@@ -64,7 +59,15 @@ header .flex {
     justify-content: space-evenly;
 
 }
+.responsive_logo h2{
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 36px;
+    margin-left: 30px;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
 
+}
 .wave {
     position: absolute;
     bottom: 0px;
@@ -91,10 +94,21 @@ b{
     text-align: center;
     color: #fff;
 }
-.img_effect img{
-    height: 120px;
+/*img menu*/
+#img_effect{
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
-
+#img_effect.fade{
+    opacity: 0;
+}
+.burguer{
+    margin-top:24px;
+    font-size: 30px;
+}
 
 header .texto_header {
     margin-top: 70px;
@@ -135,11 +149,12 @@ h3 {
 
 /*--Benefits banner--*/
 
-h4 .benefit_title{
-    font-size: 30px;
+.benefit_title{
+    font-size: 28px;
+    font-weight: 400;
     padding: 10px;
-    margin-bottom: 3px;
-    color: rgb(174, 103, 255);
+    margin-bottom: 5px;
+    color: #000000d5;
 }
 .space{
     padding: 5px;
@@ -154,7 +169,32 @@ h4 .benefit_title{
     width: 28%;
     text-align: center;
 }
+/*--link space--*/
+.links{
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+    background-color: #9b6dffd5;
+    border: 1px solid #9b6dffd5;
+    border-radius: 8px;
+}
+.links:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #7848e0d5;
+    border: 1px solid #7848e0d5;
+    border-radius: 8px;
 
+    transition: all .3s ease-in-out;
+}
+/*suscription md*/
+.test-md-img{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 150px;
+}
 /*--suscription space--*/
 b{
     color: #9c6dff;
